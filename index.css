@@ -17,3 +17,9 @@ h1 {
   justify-content: space-around;
   flex-direction: row;
 }
+
+#button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
