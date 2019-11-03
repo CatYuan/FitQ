@@ -1,25 +1,112 @@
+@charset "UTF-8";
 h1 {
-  font-family: "Duru Sans", Verdana, sans-serif;
-  text-align: center;
-  text-decoration: underline;
+  font-size: 5em;
+  font-weight: bold;
   color: blue;
-  font-size: 10 em;
+  text-align: center;
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+p {
+  text-align: center;
+  font-variant: small-caps;
   font-weight: bold;
+  font-size: 3em;
+  margin-top: 0.1em;
+  margin-bottom: 0em;
 }
-
-.question {
-  font-weight: bold;
-  font-size: 10 em;
-}
-
-.questionGroup {
+.toggle-holder{
   display: flex;
-  justify-content: space-around;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 73vh;
+}
+.emoji-toggle {
+  position: relative;
+  width: 80vw;
+  margin: 40px auto;
+}
+.emoji-toggle .well {
+  display: block;
+  background: #eee;
+  height: 5em;
+  border-radius: 10px;
+  cursor: pointer;
+
+
+}
+.emoji-toggle .toggle {
+  opacity: 0;
+  border: 0;
+  outline: none;
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  position: absolute;
+  cursor: pointer;
+  z-index: 100;
+}
+.emoji-toggle .toggle ~ .emoji:before {
+  content: "\01F431";
+  position: absolute;
+  left: 0;
+  top: -15px;
+  font-size: 40px;
+  transition: 0.2s;
+}
+.emoji-toggle .toggle:checked ~ .emoji:before {
+  left: 100%;
+  margin-left: -1em;
+}
+.emoji-toggle .toggle ~ label {
+  white-space: nowrap;
+}
+.emoji-toggle .toggle ~ label:before {
+  position: absolute;
+  right: 100%;
+  margin-right: 5px;
+  top: 0;
+}
+.emoji-toggle .toggle ~ label:after {
+  position: absolute;
+  left: 100%;
+  margin-left: 5px;
+  top: 0;
+  
+}
+input[type="checkbox"]:focus{
+  user-select: none;
+}
+.emoji-happy .toggle ~ .emoji:before {
+  content: "😢";
+  font-size: 10em;
+  margin: -0.3em;
+}
+.emoji-happy .toggle:checked ~ .emoji:before {
+  content: "😄";
 }
 
-#button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.emoji-mad .toggle ~ .emoji:before {
+  content: "😐";
+  margin: -0.3em;
+  font-size: 10em;
+}
+.emoji-mad .toggle:checked ~ .emoji:before {
+  content: "😡";
+}
+
+.emoji-love .toggle ~ .emoji:before {
+  content: "💔";
+  margin: -0.3em;
+  font-size: 10em;
+}
+.emoji-love .toggle:checked ~ .emoji:before {
+  content: "😍";
+}
+
+@media only screen and (min-width: 300px) {
+  .toggle-holder{
+    justify-content: space-around;
+    height: 50vh;
+  }
 }
