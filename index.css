@@ -1,0 +1,19 @@
+h1 {
+  font-family: "Duru Sans", Verdana, sans-serif;
+  text-align: center;
+  text-decoration: underline;
+  color: blue;
+  font-size: 10 em;
+  font-weight: bold;
+}
+
+.question {
+  font-weight: bold;
+  font-size: 10 em;
+}
+
+.questionGroup {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
