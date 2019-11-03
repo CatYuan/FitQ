@@ -4,10 +4,8 @@ This was a project created for VandyHacks 2019.
 ## What it does
 The project uses physical health data like time spent sleeping, heart rate, and activities performed throughout the day and combines these with a person's mood to generate a suggestion for how to improve your daily wellness!
 
-![Landing-Page1](https://user-images.githubusercontent.com/42955901/68089693-276fc600-fe31-11e9-99eb-0573ffb08096.png)
-![Results-Page1](https://user-images.githubusercontent.com/42955901/68089698-2fc80100-fe31-11e9-9eed-36c11dee7596.png)
-![Landing-Page2](https://user-images.githubusercontent.com/42955901/68089695-2a6ab680-fe31-11e9-9720-ba466ab53363.png)
-![Results-Page2](https://user-images.githubusercontent.com/42955901/68089697-2ccd1080-fe31-11e9-99e2-d185cc85a2ad.png)
+![Landing-Page](https://user-images.githubusercontent.com/42955901/68089693-276fc600-fe31-11e9-99eb-0573ffb08096.png)
+![Results-Page](https://user-images.githubusercontent.com/42955901/68089697-2ccd1080-fe31-11e9-99e2-d185cc85a2ad.png)
 
 ## Inspiration
 The problem we tried to solve is that people do not understand themselves well enough sometimes. This can manifest in a variety of ways; for example, someone may be angry and not know why they're angry. Behavior and mood can also affect human health and life expectancy; for example, chronic stress is thought to lead to premature death. 
